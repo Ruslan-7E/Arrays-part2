@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
 
         // task 2
-        int maxExpense = 0;
+        int maxExpense = 100_000;
         int minExpense = 200_000;
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] > maxExpense) {
