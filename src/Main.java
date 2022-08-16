@@ -10,14 +10,16 @@ public class Main {
 
         // task 2
         int maxExpense = 0;
-        int minExpense = 0;
+        int minExpense = 200_000;
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] > maxExpense) {
                 maxExpense = arr[j];
             }
-            // Дальше затупил. Как найти мин. значение.
+            if (arr[j] < minExpense) {
+                minExpense = arr[j];
+            }
         }
-        System.out.println(maxExpense);
+        System.out.println("Минимальная сумма трат за день составила " + minExpense + " рублей. Максимальная сумма трат за день составила " + maxExpense + " рублей.");
 
 
         // task 3
